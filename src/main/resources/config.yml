@@ -1,0 +1,12 @@
+# Setup here the plugin
+
+MySQL:
+  host: localhost
+  port: 3306
+  database: coins
+  username: user
+  password: password
+
+Options:
+  Prefix: '&7[&bCoins&7] '
+  notPermitted: '&cNot permitted.'
