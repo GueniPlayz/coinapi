@@ -163,7 +163,7 @@ public class MySQL {
 
     public void connect() {
         try {
-            this.connection = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database, user, password);
+            this.connection = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database + "?autoReconnect=true", user, password);
             Bukkit.getConsoleSender().sendMessage( CoinPlugin.getInstance().getPrefix() + "§aConnected successfully to the database." );
         } catch (SQLException e) {
             e.printStackTrace();
